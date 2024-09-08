@@ -109,5 +109,40 @@ body{
 @media (max-width: 800px){
     .apresentacao{
         flex-direction: column-reverse;
+        padding: 0%;
+        gap: 0.625rem;
     }
+
+    .apresentacao__conteudo{
+        width: auto;
+        margin: 5%;
+    }
+
+    .apresentacao__dados{
+        width: auto;
+        margin: 5%;
+    }
+
+    .cabecalho__menu{
+        font-size: 0.5rem;
+    }
+
+    .apresentacao__experiencia{
+        width: 100%;
+        font-size: 0.5rem;
+    }
+
+    .apresentacao__divisao__experiencia{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentacao__conteudo__paragrafo{
+        text-align: center;
+    }
+
+    
+
+  
+
 }
