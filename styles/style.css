@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root{
+    --color-background: #222831;
+    --color-primaria: #EEEEEE;
+    --color-secundaria: #00ADB5;
+    --color-terciaria: #F97300;
+    --font-family-kronaone: 'Krona one', sans-serif;
+    --font-family-roboto: 'Roboto', sans-serif;
+}
 
 *{
     padding: 0;
@@ -8,166 +16,98 @@
 }
 
 body{
-    background-color: black;
-    height: 100vh;
+    background-color: var(--color-background);
+    font-family: var(--font-family-roboto);
+    color: var(--color-primaria);
 }
 
 .cabecalho__menu{
-    /* border: 1px solid orange; */
+    padding: 1%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
-}   
-
-.cabecalho__menu__logo__imagem{
-    height: 200px;
-} 
-
-.cabecalho__menu__conteudo{
-    display: flex;
-    justify-content:space-between;
-    width: 40%; 
+    gap: 3.125rem;
 }
 
-.cabecalho__menu_link{
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    padding: 10px;
-    background-color: #41a9ff;
+.cabecalho__menu__link{
+    color: var(--color-primaria);
+    font-family: var(--font-family-kronaone);
     text-decoration: none;
-    text-decoration-color: none;
-    color: black;
+}
+
+.cabecalho__menu__link:hover{
+    color: var(--color-secundaria);
 }
 
 .apresentacao{
-    margin: 1% 0% 3.3% 0%;
-    /* border: 2px solid red; */
     display: flex;
-    justify-content:  center;
-}
-
-.apresentacao__conteudo{
-    /* border: 2px solid rgb(14, 255, 239); */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 3.125rem;
     padding: 5%;
-    width: 40%;
-    text-align: justify;
-    color: greenyellow;
-}
-
-.apresentacao__conteudo__titulo{
-    font-size: 32px;
-    color: white;
-    font-family: "Krona One", sans-serif;
-    text-align: center;
-}
-
-.apresentacao__conteudo__Subtitulo{
-    font-size: 15px;
-    color: orchid;
-    font-family: "Krona One", sans-serif;
-    
-}
-
-.apresentacao__conteudo__Subtitulo__programacao{
-    font-size: 15px;
-    color:#41a9ff;
-    font-family: "Krona One", sans-serif;
-}
-
-.cabecalho__menu_link__certificado{
-    font-size: 20px;
-    color: orchid;
-    font-family: "Krona One", sans-serif;
-    text-decoration: none;
-    border: 1px solid;
-    text-align:  center;
-}
-
-.apresentacao__conteudo__listas{
-    font-size: 15px;
-    color: white;
-}
-
-.apresentacao__conteudo__paragrafo{
-    font-family: "Krona One", sans-serif;
-}
-
-.apressentacao__conteudo__blocoexperiencia{
-    color: white;
-    font-family: "Krona One", sans-serif;
-    font-size: 15px;
-    gap: 10px;
-}
-
-.apressentacao__conteudo__blocoexperiencia__imagem{
-    height: 50px;
-}
-
-
-
-.apresentacao__conteudo__paragrafo__strong{
-    color: orchid;
+    align-items: center;
 }
 
 .apresentacao__dados{
-    /* border: 2px solid black; */
+    width: 25%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 5%;
+    align-items: center;
+    gap: 0.625rem;
 }
 
-.apresentacao__dados__titulo{
-    font-size: 32px;
-    color: white;
-    font-family: "Krona One", sans-serif;
+.apresentacao__dados__informacoes__strong{
+    color: var(--color-secundaria);
 }
 
-.apresentacao__dados__informacoes{
+.apresentacao__conteudo{
+    width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    color: orchid;
-    font-family: "Krona One", sans-serif;
+    gap: 0.625rem;
 }
 
-.apresentacao__dados__informacoes__assunto{
-    font-family: "Krona One", sans-serif;
-    font-weight: 200;
-    color: greenyellow;
-}
-
-.rodape{
-    background-color: #41a9ff;
+.apresentacao__conteudo__titulo{
+    font-family: var(--font-family-kronaone);
+    font-size: 2rem;
+    color: var(--color-secundaria);
     text-align: center;
 }
 
-.content{
-    font-family: "Krona One", sans-serif;
-    color:white;
-    font-size: 14px;
+.apresentacao__conteudo__paragrafo{
+    text-align: justify;
+    font-size: 1.25rem;
+}
+
+.apresentacao__conteudo__paragrafo__strong{
+    color: var(--color-terciaria);
+}
+
+
+.apresentacao__dados__imagem{
+    width: 12.5rem;
+}
+
+.apresentacao__experiencia{
+    width: 50%;
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+.apresentacao__divisao__experiencia{
+    display: flex;
+    justify-content:space-between;
+    gap: 1.25rem;
 }
 
 .apresentacao__conteudo__links{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 40px;
-}
-
-.apresentacao__conteudo__links__link{
-    color: greenyellow;
-    font-family: "Krona One", sans-serif;
-    border: 2px solid #41a9ff;
-    padding: 10px;
-    text-decoration: none;
-    text-decoration-color: none;
+    gap: 0.625rem;
 }
 
 
+
+@media (max-width: 800px){
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+}
